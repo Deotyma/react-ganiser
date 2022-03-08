@@ -2,10 +2,9 @@ import { render, screen } from '@testing-library/react';
 import Home from './Home';
 
 describe('Homepage UI', () =>{
-    test('renders render welcome text', () => {
+    test('renders welcome text', () => {
         render(<Home />);
-        const welcomeH = screen.getByText(/Welcome to our app/);
-        expect(welcomeH).toBeInTheDocument();
+        screen.getByText(/Welcome to our app/);
       });
       test('renders 2 buttons', () => {
           render(<Home />);
