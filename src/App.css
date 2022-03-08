@@ -25,6 +25,9 @@ body{
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  display: flex;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 .welcomeH{
@@ -34,7 +37,7 @@ body{
 
 .buttons{
 display: flex;
-justify-content: space-around;
+justify-content: center;
 }
 
 .primary_button{
@@ -44,6 +47,7 @@ justify-content: space-around;
   width: 9rem;
   padding: 0.5rem;
   border-radius: 30px;
+  margin: 1rem;
 }
 .primary_button:hover{
   background: var(--color2);
