@@ -6,8 +6,4 @@ describe('Homepage UI', () =>{
         render(<Home />);
         screen.getByText(/Welcome to our app/);
       });
-      test('renders 2 buttons', () => {
-          render(<Home />);
-          expect (screen.getAllByRole('button')).toHaveLength(2);
-        });
 })
